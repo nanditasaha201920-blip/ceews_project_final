@@ -1,4 +1,4 @@
-import streamlit as st
+pd.read_csv("outputs/results.csv")import streamlit as st
 import pandas as pd
 
 # Page setup
