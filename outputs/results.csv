@@ -1,0 +1,4 @@
+district,flood_exposure,poverty_rate,education_risk,risk_score,risk_level
+Dhaka,0.2,0.18,0.10,0.164,Low
+Barisal,0.7,0.32,0.18,0.494,Medium
+Kurigram,0.8,0.45,0.35,0.665,High
