@@ -1,0 +1,49 @@
+import pandas as pd
+import os
+
+# 1. Create directory structure automatically
+os.makedirs("data/raw", exist_ok=True)
+os.makedirs("outputs", exist_ok=True)
+
+# 2. Load the dataset
+# Ensure you have saved the CSV data provided earlier into this path
+try:
+    df = pd.read_csv("data/raw/district_data.csv")
+except FileNotFoundError:
+    print("Error: 'data/raw/district_data.csv' not found. Please save the CSV data to that folder first.")
+    exit()
+
+# 3. Comprehensive Risk Formula
+# Factors: Flood(30%), Poverty(20%), Food(15%), Health(15%), Education(10%), Gender(10%)
+# Mitigation: Climate Resilience reduces net risk by 10%
+df["risk_score"] = (
+    (0.3 * df["flood_exposure"]) +
+    (0.2 * df["poverty_rate"]) +
+    (0.15 * df["food_insecurity"]) +
+    (0.15 * df["health_access"]) +
+    (0.1 * df["education_risk"]) +
+    (0.1 * df["gender_gap"])
+) - (0.1 * df["climate_resilience"])
+
+# Keep score within logical 0-1 bounds
+df["risk_score"] = df["risk_score"].clip(lower=0, upper=1)
+
+# 4. Categorize Risk Level
+df["risk_level"] = pd.cut(
+    df["risk_score"],
+    bins=[0, 0.25, 0.5, 1],
+    labels=["Low", "Medium", "High"]
+)
+
+# 5. Generate Summary Statistics
+summary_report = df["risk_level"].value_counts().sort_index()
+
+# 6. Save Results
+df.to_csv("outputs/results.csv", index=False)
+
+# 7. Print Terminal Report
+print("Success: Analysis complete.")
+print("File saved to: outputs/results.csv")
+print("\n--- Risk Level Summary Report ---")
+print(summary_report.to_string())
+print("---------------------------------")

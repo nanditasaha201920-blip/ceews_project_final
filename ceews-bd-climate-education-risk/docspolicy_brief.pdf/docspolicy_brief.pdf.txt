@@ -1,0 +1,76 @@
+**Climate–Education Risk in Bangladesh: A Data-Driven Approach for Early Intervention**
+
+**Author:** Nandita Saha
+**Project:** Climate–Education Early Warning System (CEEWS-BD)
+
+---
+
+### **1. Problem Statement**
+
+Bangladesh is highly vulnerable to recurrent flooding, which disrupts livelihoods, displaces communities, and significantly affects children's education. In flood-prone regions, many students face school interruption or permanent dropout due to displacement, financial hardship, and lack of preparedness.
+
+Despite ongoing efforts, current response systems are largely reactive, addressing educational disruption after it occurs rather than preventing it.
+
+---
+
+### **2. Objective**
+
+This project aims to develop a simple, data-driven system to identify districts at high risk of education disruption due to climate-related factors, enabling early and targeted intervention.
+
+---
+
+### **3. Methodology**
+
+The Climate–Education Early Warning System (CEEWS-BD) combines three key indicators at the district level:
+
+* **Flood Exposure** (climate risk)
+* **Poverty Rate** (socioeconomic vulnerability)
+* **Education Risk** (dropout/literacy proxy)
+
+A composite risk score is calculated:
+
+**Risk Score = 0.5 × Flood Exposure + 0.3 × Poverty Rate + 0.2 × Education Risk**
+
+Districts are classified as:
+
+* Low Risk
+* Medium Risk
+* High Risk
+
+---
+
+### **4. Key Insights**
+
+* Flood-prone districts show significantly higher education vulnerability
+* Socioeconomic factors amplify the impact of climate shocks
+* High-risk districts can be identified before disaster events occur
+
+---
+
+### **5. Policy Implications**
+
+This system demonstrates that integrating climate and education data can support proactive decision-making. It provides a practical tool for identifying vulnerable regions and prioritizing interventions.
+
+---
+
+### **6. Recommendations**
+
+1. **Pre-Flood Intervention Planning**
+   Target high-risk districts with preparedness programs before flood seasons.
+
+2. **Data Integration into National Systems**
+   Incorporate climate risk indicators into Bangladesh’s Education Management Information System (EMIS).
+
+3. **Targeted Resource Allocation**
+   Direct NGO and government support toward districts identified as high risk.
+
+4. **Community-Based Support Programs**
+   Strengthen local awareness and resilience to reduce education disruption.
+
+---
+
+### **7. Conclusion**
+
+A data-driven approach can shift Bangladesh’s response from reactive to proactive, reducing climate-induced educational disruption. Systems like CEEWS-BD can support more resilient and equitable education outcomes for vulnerable populations.
+
+---
