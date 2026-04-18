@@ -1,5 +1,14 @@
 import streamlit as st
 import pandas as pd
+
+st.title("Climate–Education Risk Dashboard (Bangladesh)")
+
+try:
+    df = pd.read_csv("outputs/results.csv")
+    st.dataframe(df)
+except Exception as e:
+    st.error(f"Error loading file: {e}")import streamlit as st
+import pandas as pd
 import plotly.express as px
 
 # Page Config
