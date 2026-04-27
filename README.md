@@ -1,5 +1,7 @@
 # Climate–Education Risk Dashboard (Bangladesh)
 
+Full App Link: https://ceewsprojectfinal-cgyiulnahwsh5qeup4gofa.streamlit.app/
+
 ## Overview
 This project identifies climate-vulnerable districts in Bangladesh where education continuity is at risk.
 
